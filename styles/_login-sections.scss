@@ -1,0 +1,53 @@
+header{
+    min-height: 50vh;
+    background: #111010bb;
+    margin: 10px 20vw;
+    padding: 15px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2{
+        opacity: 0.6;
+    }
+    @media only screen and (max-width:750px){
+        margin: 10px 20px;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        input{
+            width: 60%;
+            max-width: 450px;
+            margin: 5px auto;
+            border: none;
+            padding: 10px;
+            font-size: 20px;
+            border-radius: 10px;
+        }
+        #submit-btn{
+            margin: 10px auto;
+            font-size: 20px;
+            padding: 10px 20px;
+            border-radius: 200px;
+            width: fit-content;
+            background-color: $on-nav-color;
+            color: white;
+            font-weight: $body-w2;
+            border: none;
+            cursor: pointer;
+        }
+    }
+    #logged-in{
+        visibility: hidden;
+        .clear-btn{
+            padding: 10px 20px;
+            border-radius: 200px;
+            font-size: 18px;
+            cursor: pointer;
+            
+        }
+        
+    }
+    
+}
