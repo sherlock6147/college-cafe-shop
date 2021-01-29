@@ -28,15 +28,17 @@ userBtn.addEventListener("click", function () {
 });
 
 window.onload = function () {
-    if (JSON.parse(sessionStorage.userInfo)!="") {
-        form.style.visibility = "hidden";
-        form.style.height = "0px";
-        loginText.style.visibility = "visible";
-    }
-    else  {
-        form.style.visibility = "visible";
-        form.style.height = "auto";
-        loginText.style.visibility = "hidden";
+    if (sessionStorage.userInfo != null) {
+        if (JSON.parse(sessionStorage.userInfo) != "") {
+            form.style.visibility = "hidden";
+            form.style.height = "0px";
+            loginText.style.visibility = "visible";
+        }
+        else {
+            form.style.visibility = "visible";
+            form.style.height = "auto";
+            loginText.style.visibility = "hidden";
+        }
     }
 };
 
