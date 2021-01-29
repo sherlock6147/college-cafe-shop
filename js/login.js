@@ -28,12 +28,12 @@ userBtn.addEventListener("click", function () {
 });
 
 window.onload = function () {
-    if (sessionStorage.userInfo!={}) {
+    if (JSON.parse(sessionStorage.userInfo)!="") {
         form.style.visibility = "hidden";
         form.style.height = "0px";
         loginText.style.visibility = "visible";
     }
-    if (sessionStorage.length==1) {
+    else  {
         form.style.visibility = "visible";
         form.style.height = "auto";
         loginText.style.visibility = "hidden";

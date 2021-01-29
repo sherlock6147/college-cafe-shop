@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/login.css">
-    <title>Login | Nescafe Adda</title>
+    <link rel="stylesheet" href="/styles/cart.css">  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Payment Successful | Nescafe Adda</title>
 </head>
 <body>
     <div class="bg"></div>
@@ -15,7 +16,7 @@
                 <li><a href="/index.html">Home</a></li>
                 <li><a href="/pages/menu.html">Menu</a></li>
             </ul>
-            <!-- <li class="li-login"><a href="/pages/login.html">Login</a></li> -->
+            <li class="li-login"><a href="/pages/login.html">Login</a></li>
             <li class="li-cart"><a href="/pages/cart.html">Cart</a></li>
             <li class="li-menu"><button id="menu-btn"><img src="/assets/menu-btn.png" alt="menu-btn"></button></li>
         </ul>
@@ -28,25 +29,13 @@
     </nav>
     <main style="color:aliceblue;text-align:center;">
         <header>
-            <h1>Login Or Signup</h1>
-            <form id="login">
-                <label for="name">Name</label>
-                <input type="text" required id="name" name="name">
-                <label for="email">Email</label>
-                <input type="mail" required id="email" name="email">
-                <label for="password">Password</label>
-                <input type="password" required id="password" name="password">
-                <button type="submit" id="submit-btn">Submit</button>
-            </form>
-            <div id="logged-in">
-                <h3>You are logged in. (if this is an error then please claer your session stroage and retry)</h2>
-                <button class="clear-btn" id="clear-btn">Clear</button>
-            </div>
+            <h1>Payment successful</h1>
+            <h2 id="payment">Payment</h2>
         </header>
     </main>
     <footer>
         &copy;Nescafe Adda Shop, Nit Durgapur, WB, India
     </footer>
 </body>
-<script src="/js/login.js"></script>
+<script src="/js/checkout.js"></script>
 </html>

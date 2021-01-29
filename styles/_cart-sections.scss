@@ -1,0 +1,58 @@
+@import 'colors';
+header{
+    min-height: 20vh;
+    background: #111010bb;
+    margin: 10px 20vw;
+    padding: 15px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;justify-content: center;
+    h2{
+        opacity: 0.6;
+    }
+    @media only screen and (max-width:750px){
+        margin: 10px 20px;
+    }
+}
+.display-orders{
+    table{
+        min-height: 20vh;
+        background: #6d6767bb;
+        margin: 10px 20vw;
+        padding: 15px;
+        border-radius: 25px;
+        width: 80%;
+        margin: auto;
+    }
+    @media only screen and (max-width:750px){
+        margin: 10px 20px;
+    }
+}
+.remove-btn{
+    padding: 10px 20px;
+    color: white;
+    background: $on-nav-color;
+    border: none;
+    margin: 6px 0px;
+    border-radius: 100px;
+    
+}
+.checkout{
+    display: flex;
+    flex-direction: row;
+    margin: 20px auto;
+    width: 60%;
+    max-width: 250px;
+    font-size: 22px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 100px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #3f8ef7;
+    text-decoration: none;
+    color: white;
+    #amount{
+        color: white;
+    }
+}

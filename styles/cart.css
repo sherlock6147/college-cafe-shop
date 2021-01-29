@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700;800");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700;800");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700;800");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins";
+  font-weight: 400;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h2 {
+  font-weight: 600;
+}
+
+.bg {
+  background-image: url("../assets/cafe-bg-cofee.png");
+  z-index: -1;
+  background-size: cover;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+
+body h1 {
+  font-family: "Poppins";
+  font-weight: 700;
+}
+
+body h2 {
+  font-family: "Poppins";
+  font-weight: 600;
+}
+
+.navigation {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 10px 20px;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(65, 60, 60, 0.9);
+}
+
+.navigation .nav-big {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  color: #FF5454;
+}
+
+.navigation .nav-big .cafe-name {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+}
+
+.navigation .nav-big .cafe-name h1 {
+  font-weight: 800;
+}
+
+.navigation .nav-big .pages {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navigation .nav-big .pages li {
+  margin: 10px;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.navigation .nav-big .pages li a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+@media only screen and (max-width: 750px) {
+  .navigation .nav-big .pages {
+    visibility: hidden;
+    width: 0;
+  }
+}
+
+.navigation .nav-big .li-login {
+  -webkit-box-flex: 0;
+      -ms-flex: 0;
+          flex: 0;
+  margin: 0px 10px;
+  padding-top: 10px;
+}
+
+.navigation .nav-big .li-login a {
+  margin: auto;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 5px 15px;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 100px;
+  background-color: #FF5454;
+  font-size: 18px;
+}
+
+.navigation .nav-big .li-cart {
+  -webkit-box-flex: 0;
+      -ms-flex: 0;
+          flex: 0;
+  margin: 0px 10px;
+  padding-top: 10px;
+}
+
+.navigation .nav-big .li-cart a {
+  cursor: pointer;
+  margin: auto;
+  font-weight: 600;
+  padding: 5px 15px;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 100px;
+  background-color: #FF5454;
+  font-size: 18px;
+}
+
+.navigation .nav-big .li-menu {
+  -webkit-box-flex: 0;
+      -ms-flex: 0;
+          flex: 0;
+  margin: 0px 0px 0px 10px;
+}
+
+.navigation .nav-big .li-menu button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.navigation .nav-big .li-menu button img {
+  width: 55px;
+}
+
+.navigation .nav-small {
+  visibility: hidden;
+  height: 0;
+  color: #FF5454;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.navigation .nav-small li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-weight: 600;
+  text-align: center;
+  font-size: 22px;
+}
+
+.navigation .nav-small li a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.navigation .visible {
+  visibility: visible;
+  height: auto;
+}
+
+header {
+  min-height: 50vh;
+  background: #111010bb;
+  margin: 10px 20vw;
+  padding: 15px;
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header h2 {
+  opacity: 0.6;
+}
+
+@media only screen and (max-width: 750px) {
+  header {
+    margin: 10px 20px;
+  }
+}
+
+header {
+  min-height: 20vh;
+  background: #111010bb;
+  margin: 10px 20vw;
+  padding: 15px;
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header h2 {
+  opacity: 0.6;
+}
+
+@media only screen and (max-width: 750px) {
+  header {
+    margin: 10px 20px;
+  }
+}
+
+.display-orders table {
+  min-height: 20vh;
+  background: #6d6767bb;
+  margin: 10px 20vw;
+  padding: 15px;
+  border-radius: 25px;
+  width: 80%;
+  margin: auto;
+}
+
+@media only screen and (max-width: 750px) {
+  .display-orders {
+    margin: 10px 20px;
+  }
+}
+
+.remove-btn {
+  padding: 10px 20px;
+  color: white;
+  background: #FF5454;
+  border: none;
+  margin: 6px 0px;
+  border-radius: 100px;
+}
+
+.checkout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 20px auto;
+  width: 60%;
+  max-width: 250px;
+  font-size: 22px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 100px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #3f8ef7;
+  text-decoration: none;
+  color: white;
+}
+
+.checkout #amount {
+  color: white;
+}
+
+footer {
+  width: 100%;
+  color: #FF5454;
+  font-weight: 600;
+  padding-top: 20px;
+  margin: auto;
+  text-align: center;
+  min-height: 10vh;
+  vertical-align: baseline;
+  background-color: rgba(65, 60, 60, 0.9);
+}
+/*# sourceMappingURL=cart.css.map */

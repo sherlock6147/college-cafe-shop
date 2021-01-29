@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/menu.css">
+    <title>Menu | Nescafe Adda</title>
+</head>
+<body>
+    <div class="bg"></div>
+    <nav class="navigation">
+        <ul class="nav-big">
+            <li class="cafe-name"><h1>Nescafe Adda</h1></li>
+            <ul class="pages">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/menu.html">Menu</a></li>
+            </ul>
+            <li class="li-login"><a href="/pages/login.html">Login</a></li>
+            <li class="li-cart"><a href="/pages/cart.html">Cart</a></li>
+            <li class="li-menu"><button id="menu-btn"><img src="/assets/menu-btn.png" alt="menu-btn"></button></li>
+        </ul>
+        <nav class="mobile">
+            <ul class="nav-small" id="mobile-nav">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/menu.html">Menu</a></li>
+            </ul>
+        </nav>
+    </nav>
+    <main style="color:aliceblue;text-align:center;">
+        <header>
+            <h1>Menu</h1>
+            <h2>Explore our yummy menu to satisfy your hunger</h2>
+            <h2 id="welcome">Welcome</h2>
+        </header>
+        <section class="menu">
+            <article class="coffees">
+                <h2>Coffees</h2>
+                <ul class="item-holder">
+                    <li class="menu-item">
+                        <h2>Cappuccino</h2>
+                        <p>The most premium coffee at ₹39</p>
+                        <img src="/assets/cappuccino.jpg" alt="cappuccino">
+                        <button class="add-btn" title="39" onclick="addItem(this)" id="Cappuccino">Add to cart</button>
+                    </li>
+                    <li class="menu-item">
+                        <h2>Mocha</h2>
+                        <p>Foreign beans grinded to a perfect mix starting from ₹59</p>
+                        <img src="/assets/mocha.jpg" alt="mocha">
+                        <button class="add-btn" title="59" onclick="addItem(this)" id="Mocha">Add to cart</button>
+                    </li>
+                    <li class="menu-item">
+                        <h2>Black Coffee</h2>
+                        <p>The classic cup of coffee to keep you working starting from ₹19</p>
+                        <img src="/assets/black-coffee.jpg" alt="black-coffee">
+                        <button class="add-btn" title="19" onclick="addItem(this)" id="Black Coffee">Add to cart</button>
+                    </li>
+                </ul>
+            </article>
+            <article class="teas">
+                <h2>Chais</h2>
+                <ul class="item-holder">
+                    <li class="menu-item">
+                        <h2>Ginger Tea</h2>
+                        <p>The most premium tea at ₹39</p>
+                        <img src="/assets/ginger-tea.jpg" alt="ginger tea">
+                        <button class="add-btn" title="39" onclick="addItem(this)" id="Ginger Tea">Add to cart</button>
+                    </li>
+                    <li class="menu-item">
+                        <h2>Masala Tea</h2>
+                        <p>A perfect mix of Indian masalas in a tea, starting from ₹59</p>
+                        <img src="/assets/masala-tea.jpg" alt="masala tea">
+                        <button class="add-btn" title="59" onclick="addItem(this)" id="Masala Tea">Add to cart</button>
+                    </li>
+                    <li class="menu-item">
+                        <h2>Black Tea</h2>
+                        <p>The classic cup of Tea to keep you working starting from ₹19</p>
+                        <img src="/assets/black-tea.jpg" alt="black tea">
+                        <button class="add-btn" title="19" onclick="addItem(this)" id="Black Tea">Add to cart</button>
+                    </li>
+                </ul>
+            </article>
+            <article class="sandwiches">
+                <h2>Sandwiches</h2>
+                <ul class="item-holder">
+                    <li class="menu-item">
+                        <h2>Chicken Sandwich</h2>
+                        <p>Delecious chicken sandwich at ₹159 per plate</p>
+                        <img src="/assets/ch-sandwich.jpg" alt="Chicken Grilled Sandwich">
+                        <button class="add-btn" title="159" onclick="addItem(this)" id="Chicken Grilled Sandwich">Add to cart</button>
+                    </li>
+                    <li class="menu-item">
+                        <h2>Veg Cheese Sandwich</h2>
+                        <p>A delicious healthy veg Sandwich filled with cheese at ₹99</p>
+                        <img src="/assets/veg-cheese-sandwich.jpg" alt="veg cheese sandwich">
+                        <button class="add-btn" title="99" onclick="addItem(this)" id="Veg Cheese Sandwich">Add to cart</button>
+                    </li>
+                </ul>
+            </article>
+        </section>
+    </main>
+    <footer>
+        &copy;Nescafe Adda Shop, Nit Durgapur, WB, India
+    </footer>
+</body>
+<script src="/js/menu.js"></script>
+</html>
