@@ -17,11 +17,13 @@ function addItem(element) {
 var welcome = document.getElementById('welcome');
 window.onload = function () {
     sessionStorage.order = JSON.stringify(order);
-    if (sessionStorage.userInfo.length == 1 || sessionStorage.userInfo.length==0) {
-        welcome.style.visibility="hidden";
-    } else {
-        var user = JSON.parse(sessionStorage.userInfo);
-        welcome.innerHTML = 'Welcome '+ user.name;
-        welcome.style.visibility = "visible";
+    if (sessionStorage.userInfo!=null){
+        if (sessionStorage.userInfo == "") {
+            welcome.style.visibility="hidden";
+        } else {
+            var user = JSON.parse(sessionStorage.userInfo);
+            welcome.innerHTML = 'Welcome '+ user.name;
+            welcome.style.visibility = "visible";
+        }
     }
 };

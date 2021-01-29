@@ -28,20 +28,24 @@ function enterOrders() {
     sessionStorage.amount = amount.toString();
 }
 window.onload = function () {
-    if (JSON.parse(sessionStorage.userInfo)=="") {
-        welcome.style.visibility="hidden";
-    } else {
-        var user = JSON.parse(sessionStorage.userInfo);
-        welcome.innerHTML = user.name+'\'s Cart';
-        welcome.style.visibility = "visible";
+    if(sessionStorage.userInfo!=null){
+        if (sessionStorage.userInfo == "") {
+            welcome.style.visibility="hidden";
+        } else {
+            var user = JSON.parse(sessionStorage.userInfo);
+            welcome.innerHTML = user.name+'\'s Cart';
+            welcome.style.visibility = "visible";
+        }
     }
-    if (JSON.parse(sessionStorage.order)["orders"].length == 0) {
-        console.log("empty cart");
-        empty.style.visibility = "visible";
-    }
-    else {
-        empty.style.visibility = "hidden";
-        enterOrders();
+    if(sessionStorage.order!=null){
+        if (JSON.parse(sessionStorage.order)["orders"].length == 0) {
+            console.log("empty cart");
+            empty.style.visibility = "visible";
+        }
+        else {
+            empty.style.visibility = "hidden";
+            enterOrders();
+        }
     }
 };
 
