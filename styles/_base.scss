@@ -1,0 +1,23 @@
+@import 'fonts';
+@import 'colors';
+*{
+    padding: 0;
+    margin: 0;
+    font-family: $body;
+    font-weight: $body-w1;
+    box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+}
+h2{
+    font-weight: $body-w2;
+}
+.bg{
+    background-image: url("../assets/cafe-bg-cofee.png");
+    z-index: -1;
+    background-size: cover;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+}

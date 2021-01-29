@@ -1,0 +1,11 @@
+@import 'fonts';
+body{
+    h1{
+        font-family: $heading;
+        font-weight: $heading-w2;
+    }
+    h2{
+        font-family: $body;
+        font-weight: $body-w2;
+    }
+}

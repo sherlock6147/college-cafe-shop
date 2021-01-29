@@ -1,0 +1,117 @@
+@import 'fonts';
+@import 'colors';
+.navigation{
+    
+    position: sticky;
+    top: 0;
+    padding: 10px 20px;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(65, 60, 60, 0.9);
+    .nav-big{
+        display: flex;
+        width: 100%;
+        color: $on-nav-color;
+        .cafe-name{
+            width: fit-content;
+            text-align: center;
+            h1{
+                font-weight: 800;
+            }
+        }
+        .pages{
+            flex: 3;
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            justify-content: center;
+            li{
+                margin: 10px;
+                // flex: 1;
+                font-size: 24px;
+                font-weight: $body-w2;
+                text-align: center;
+                a{
+                    color: inherit;
+                    text-decoration: none;
+                    font-size: 24px;
+                    font-weight: $body-w2;
+                    text-align: center;
+                }
+            }
+            @media only screen and (max-width:750px){
+                visibility: hidden;
+                width: 0;
+            }
+        }
+        .li-login{
+            flex: 0;
+            margin: 0px 10px;
+            padding-top: 10px;
+            button{
+                margin: auto;
+                cursor:pointer;
+                padding: 5px 15px;
+                color: white;
+                font-weight: 600;
+                border: none;
+                border-radius: 100px;
+                background-color: $on-nav-color;
+                font-size: 18px;
+            }
+        }
+        .li-cart{
+            flex:0;
+            margin: 0px 10px;
+            padding-top: 10px;
+            button{
+                cursor:pointer;
+                margin: auto;
+                font-weight: 600;
+                padding: 5px 15px;
+                color: white;
+                border: none;
+                border-radius: 100px;
+                background-color: $on-nav-color;
+                font-size: 18px;
+            }
+        }
+        .li-menu{
+            flex: 0;
+            margin: 0px 0px 0px 10px;
+            button{
+                cursor:pointer;
+                background: none;
+                border: none;
+                outline: none;
+                img{
+                    width: 55px;
+                }
+            }
+        }
+    }
+    .nav-small{
+        visibility: hidden;
+        height: 0;
+        color: $on-nav-color;
+        display: flex;
+        flex-direction: row;
+        li{
+            flex: 1;
+            font-weight: $body-w2;
+            text-align: center;
+            font-size: 22px;
+            a{
+                color: inherit;
+                text-decoration: none;
+                font-size: 24px;
+                font-weight: $body-w2;
+                text-align: center;
+            }
+        }
+    }
+    .visible{
+        visibility: visible;
+        height: auto;
+    }
+}

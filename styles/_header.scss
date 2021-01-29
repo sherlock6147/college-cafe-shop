@@ -1,0 +1,15 @@
+header{
+    min-height: 50vh;
+    background: #111010bb;
+    margin: 10px 20vw;
+    padding: 15px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;justify-content: center;
+    h2{
+        opacity: 0.6;
+    }
+    @media only screen and (max-width:750px){
+        margin: 10px 20px;
+    }
+}

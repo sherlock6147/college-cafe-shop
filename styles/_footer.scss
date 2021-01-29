@@ -1,0 +1,15 @@
+@import 'colors';
+footer{
+    width: 100%;
+    bottom: 0;
+    z-index: 1;
+    position: sticky;
+    color: $on-nav-color;
+    font-weight: 600;
+    padding-top: 20px;
+    margin: auto;
+    text-align: center;
+    min-height: 10vh;
+    vertical-align: baseline;
+    background-color: $nav-color;
+}
