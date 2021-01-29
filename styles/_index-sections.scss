@@ -17,6 +17,9 @@
             margin: 10px;
             padding: 10px;
             border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             h2{
                 color: #faf0f0;
             }
@@ -26,6 +29,7 @@
             }
             img{
                 width: 80%;
+                margin: auto;
                 border-radius: 15px;
             }
         }

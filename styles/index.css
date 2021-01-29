@@ -114,8 +114,9 @@ body h2 {
   padding-top: 10px;
 }
 
-.navigation .nav-big .li-login button {
+.navigation .nav-big .li-login a {
   margin: auto;
+  text-decoration: none;
   cursor: pointer;
   padding: 5px 15px;
   color: white;
@@ -134,12 +135,13 @@ body h2 {
   padding-top: 10px;
 }
 
-.navigation .nav-big .li-cart button {
+.navigation .nav-big .li-cart a {
   cursor: pointer;
   margin: auto;
   font-weight: 600;
   padding: 5px 15px;
   color: white;
+  text-decoration: none;
   border: none;
   border-radius: 100px;
   background-color: #FF5454;
@@ -264,6 +266,16 @@ header h2 {
   margin: 10px;
   padding: 10px;
   border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .small-menu .item-holder .menu-item h2 {
@@ -277,6 +289,7 @@ header h2 {
 
 .small-menu .item-holder .menu-item img {
   width: 80%;
+  margin: auto;
   border-radius: 15px;
 }
 
