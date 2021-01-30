@@ -7,12 +7,12 @@ var order = JSON.parse('{"orders":[]}');
 function addItem(element) {
     console.log(element.id);
     console.log(element.title);
-    var orderString = '{order: "'+element.id.toString+'" price: "'+element.title+'"}';
-    var item = {};
-    item.itemName = element.id;
-    item.price = element.title;
-    order["orders"].push({ itemName: element.id, itemPrice: element.title });
-    sessionStorage.order = JSON.stringify(order);
+    if (sessionStorage.userInfo != null) {
+        order["orders"].push({ itemName: element.id, itemPrice: element.title });
+        sessionStorage.order = JSON.stringify(order);
+    } else {
+        alert("Please Login");
+    }
 }
 var welcome = document.getElementById('welcome');
 window.onload = function () {
