@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/menu.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Menu | Nescafe Adda</title>
 </head>
 <body>
@@ -189,6 +190,20 @@
     <footer>
         &copy;Nescafe Adda Shop, Nit Durgapur, WB, India
     </footer>
+    <script>
+        $(document).ready(function() {
+        //Preloader
+        preloaderFadeOutTime = 500;
+        function hidePreloader() {
+        var preloader = $('.spinner-wrapper');
+        preloader.fadeOut(preloaderFadeOutTime);
+        }
+        hidePreloader();
+        });
+    </script>
 </body>
+<div class="spinner-wrapper">
+    <div class="spinner"></div>
+</div>
 <script src="../js/menu.js"></script>
 </html>

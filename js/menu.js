@@ -12,7 +12,7 @@ function addItem(element) {
     console.log(qtyInput.value);
     if (sessionStorage.userInfo != null) {
         if (qtyInput.value >= 1) {
-            order["orders"].push({ itemName: element.id, itemPrice: element.title, itemQty: qtyInput.value});
+            order.orders.push({ itemName: element.id, itemPrice: element.title, itemQty: qtyInput.value});
             sessionStorage.order = JSON.stringify(order);
             ++i;
         } else {
