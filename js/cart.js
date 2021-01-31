@@ -18,10 +18,11 @@ function enterOrders() {
         finalHTML += '<tr>';
         finalHTML += '<td>' + (i+1).toString() + '</td>';
         finalHTML += '<td>' + orders[i].itemName + '</td>';
+        finalHTML += '<td>' + orders[i].itemQty + '</td>';
         finalHTML += '<td>' + orders[i].itemPrice + '</td>';
         finalHTML += '<td>' + '<button class="remove-btn" onclick="removeItem(this)" id="' + (i+1) + '">Remove</button>' + '</td>';
         finalHTML += '</tr>';
-        amount += parseInt(orders[i].itemPrice);
+        amount += parseInt(orders[i].itemPrice)*parseInt(orders[i].itemQty);
     }
     tbody.innerHTML = finalHTML;
     amountH.innerHTML = '₹' + amount;
@@ -35,6 +36,8 @@ window.onload = function () {
             var user = JSON.parse(sessionStorage.userInfo);
             welcome.innerHTML = user.name+'\'s Cart';
             welcome.style.visibility = "visible";
+            var loginBtn = document.getElementById('login-btn');
+            loginBtn.text = "Logout";
         }
     }
     if(sessionStorage.order!=null){
@@ -53,7 +56,7 @@ function removeItem(element) {
     var data = JSON.parse(sessionStorage.order);
     var j = parseInt(element.id) - 1;
     console.log(data.orders.splice(j, 1));
-    console.log(data)
+    console.log(data);
     sessionStorage.order = JSON.stringify(data);
     window.location.reload();
 }

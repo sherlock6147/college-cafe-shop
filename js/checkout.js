@@ -34,4 +34,8 @@ window.onload = function () {
         payM.innerHTML = 'Payment of ₹' + sessionStorage.amount + ' has been made<br>Thank You';
         getPayment();
     }
+    if (sessionStorage.userInfo != "" && sessionStorage.userInfo != null) {
+        var loginBtn = document.getElementById('login-btn');
+        loginBtn.text = "Logout";
+    }
 };

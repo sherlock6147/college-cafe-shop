@@ -15,8 +15,8 @@
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="../pages/menu.html">Menu</a></li>
             </ul>
-            <li class="li-login"><a href="../pages/login.html">Login</a></li>
-            <li class="li-cart"><a href="../pages/cart.html">Cart</a></li>
+            <li class="li-login"><a href="../pages/login.html" id="login-btn">Login</a></li>
+            <li class="li-cart"><a href="../pages/cart.html" id="cart-btn">Cart</a></li>
             <li class="li-menu"><button id="menu-btn"><img src="../assets/menu-btn.png" alt="menu-btn"></button></li>
         </ul>
         <nav class="mobile">
@@ -37,22 +37,55 @@
                 <h2>Coffees</h2>
                 <ul class="item-holder">
                     <li class="menu-item">
-                        <h2>Cappuccino</h2>
-                        <p>The most premium coffee at ₹39</p>
                         <img src="../assets/cappuccino.jpg" alt="cappuccino">
-                        <button class="add-btn" title="39" onclick="addItem(this)" id="Cappuccino">Add to cart</button>
+                        <h2>Cappuccino</h2>
+                        <span class="rating">
+                            <div class="star-container">
+                                <img src="../assets/Star.png" alt="Star">
+                            </div>
+                            <h2 id="ratingCappuccino"></h2>
+                            <button class="rate-me" id="rateCappuccino" onclick="rateItem(this)">Rate</button>
+                        </span>
+                        <p>The most premium coffee at ₹39</p>
+                        <span>
+                            <label for="CappucinoQty">Qantity:</label>
+                            <input type="number" id="CappuccinoQty">
+                        </span>
+                        <button class="add-btn" title="39" name="1" onclick="addItem(this)" id="Cappuccino">Add to cart</button>
                     </li>
                     <li class="menu-item">
-                        <h2>Mocha</h2>
-                        <p>Foreign beans grinded to a perfect mix starting from ₹59</p>
                         <img src="../assets/mocha.jpg" alt="mocha">
-                        <button class="add-btn" title="59" onclick="addItem(this)" id="Mocha">Add to cart</button>
+                        <h2>Mocha</h2>
+                        <span class="rating">
+                            <div class="star-container">
+                                <img src="../assets/Star.png" alt="Star">
+                            </div>
+                            <h2 id="ratingMocha"></h2>
+                            <button class="rate-me" id="rateMocha" onclick="rateItem(this)">Rate</button>
+                        </span>
+                        <p>Foreign beans grinded to a perfect mix starting from ₹59</p>
+                        <span>
+                            <label for="MochaQty">Qantity:</label>
+                            <input type="number" id="MochaQty">
+                        </span>
+                        <button class="add-btn" title="59"  name="1" onclick="addItem(this)" id="Mocha">Add to cart</button>
                     </li>
                     <li class="menu-item">
-                        <h2>Black Coffee</h2>
-                        <p>The classic cup of coffee to keep you working starting from ₹19</p>
                         <img src="../assets/black-coffee.jpg" alt="black-coffee">
-                        <button class="add-btn" title="19" onclick="addItem(this)" id="Black Coffee">Add to cart</button>
+                        <h2>Black Coffee</h2>
+                        <span class="rating">
+                            <div class="star-container">
+                                <img src="../assets/Star.png" alt="Star">
+                            </div>
+                            <h2 id="ratingBlack Coffee"></h2>
+                            <button class="rate-me" id="rateBlack Coffee" onclick="rateItem(this)">Rate</button>
+                        </span>
+                        <p>The classic cup of coffee to keep you working starting from ₹19</p>
+                        <span>
+                            <label for="Black CoffeeQty">Qantity:</label>
+                            <input type="number" id="Black CoffeeQty">
+                        </span>                    
+                        <button class="add-btn" title="19"  name="1" onclick="addItem(this)" id="Black Coffee">Add to cart</button>
                     </li>
                 </ul>
             </article>
@@ -60,22 +93,55 @@
                 <h2>Chais</h2>
                 <ul class="item-holder">
                     <li class="menu-item">
-                        <h2>Ginger Tea</h2>
-                        <p>The most premium tea at ₹39</p>
                         <img src="../assets/ginger-tea.jpg" alt="ginger tea">
-                        <button class="add-btn" title="39" onclick="addItem(this)" id="Ginger Tea">Add to cart</button>
+                        <h2>Ginger Tea</h2>
+                        <span class="rating">
+                            <div class="star-container">
+                                <img src="../assets/Star.png" alt="Star">
+                            </div>
+                            <h2 id="ratingGinger Tea"></h2>
+                            <button class="rate-me" id="rateGinger Tea" onclick="rateItem(this)">Rate</button>
+                        </span>
+                        <p>The most premium tea at ₹39</p>
+                        <span>
+                            <label for="Ginger TeaQty">Qantity:</label>
+                            <input type="number" id="Ginger TeaQty">
+                        </span>
+                        <button class="add-btn" title="39" name="1" onclick="addItem(this)" id="Ginger Tea">Add to cart</button>
                     </li>
                     <li class="menu-item">
-                        <h2>Masala Tea</h2>
-                        <p>A perfect mix of Indian masalas in a tea, starting from ₹59</p>
                         <img src="../assets/masala-tea.jpg" alt="masala tea">
-                        <button class="add-btn" title="59" onclick="addItem(this)" id="Masala Tea">Add to cart</button>
+                        <h2>Masala Tea</h2>
+                        <span class="rating">
+                            <div class="star-container">
+                                <img src="../assets/Star.png" alt="Star">
+                            </div>
+                            <h2 id="ratingMasala Tea"></h2>
+                            <button class="rate-me" id="rateMasala Tea" onclick="rateItem(this)">Rate</button>
+                        </span>
+                        <p>A perfect mix of Indian masalas in a tea, starting from ₹59</p>
+                        <span>
+                            <label for="Masala TeaQty">Qantity:</label>
+                            <input type="number" id="Masala TeaQty">
+                        </span>
+                        <button class="add-btn" title="59" name="1" onclick="addItem(this)" id="Masala Tea">Add to cart</button>
                     </li>
                     <li class="menu-item">
-                        <h2>Black Tea</h2>
-                        <p>The classic cup of Tea to keep you working starting from ₹19</p>
                         <img src="../assets/black-tea.jpg" alt="black tea">
-                        <button class="add-btn" title="19" onclick="addItem(this)" id="Black Tea">Add to cart</button>
+                        <h2>Black Tea</h2>
+                        <span class="rating">
+                            <div class="star-container">
+                                <img src="../assets/Star.png" alt="Star">
+                            </div>
+                            <h2 id="ratingBlack Tea"></h2>
+                            <button class="rate-me" id="rateBlack Tea" onclick="rateItem(this)">Rate</button>
+                        </span>
+                        <p>The classic cup of Tea to keep you working starting from ₹19</p>
+                        <span>
+                            <label for="Black TeaQty">Qantity:</label>
+                            <input type="number" id="Black TeaQty">
+                        </span>
+                        <button class="add-btn" title="19" name="1" onclick="addItem(this)" id="Black Tea">Add to cart</button>
                     </li>
                 </ul>
             </article>
@@ -83,16 +149,38 @@
                 <h2>Sandwiches</h2>
                 <ul class="item-holder">
                     <li class="menu-item">
+                        <img src="../assets/ch-sandwich.jpg" alt="Chicken Sandwich">
                         <h2>Chicken Sandwich</h2>
+                        <span class="rating">
+                            <div class="star-container">
+                                <img src="../assets/Star.png" alt="Star">
+                            </div>
+                            <h2 id="ratingChicken Sandwich"></h2>
+                            <button class="rate-me" id="rateChicken Sandwich" onclick="rateItem(this)">Rate</button>
+                        </span>
                         <p>Delecious chicken sandwich at ₹159 per plate</p>
-                        <img src="../assets/ch-sandwich.jpg" alt="Chicken Grilled Sandwich">
-                        <button class="add-btn" title="159" onclick="addItem(this)" id="Chicken Grilled Sandwich">Add to cart</button>
+                        <span>
+                            <label for="Chicken SandwichQty">Qantity:</label>
+                            <input type="number" id="Chicken SandwichQty">
+                        </span>
+                        <button class="add-btn" title="159" name="1" onclick="addItem(this)" id="Chicken Sandwich">Add to cart</button>
                     </li>
                     <li class="menu-item">
-                        <h2>Veg Cheese Sandwich</h2>
-                        <p>A delicious healthy veg Sandwich filled with cheese at ₹99</p>
                         <img src="../assets/veg-cheese-sandwich.jpg" alt="veg cheese sandwich">
-                        <button class="add-btn" title="99" onclick="addItem(this)" id="Veg Cheese Sandwich">Add to cart</button>
+                        <h2>Veg Cheese Sandwich</h2>
+                        <span class="rating">
+                            <div class="star-container">
+                                <img src="../assets/Star.png" alt="Star">
+                            </div>
+                            <h2 id="ratingVeg Cheese Sandwich"></h2>
+                            <button class="rate-me" id="rateVeg Cheese Sandwich" onclick="rateItem(this)">Rate</button>
+                        </span>
+                        <p>A delicious healthy veg Sandwich filled with cheese at ₹99</p>
+                        <span>
+                            <label for="Veg Cheese SandwichQty">Qantity:</label>
+                            <input type="number" id="Veg Cheese SandwichQty">
+                        </span>
+                        <button class="add-btn" title="99" name="1" onclick="addItem(this)" id="Veg Cheese Sandwich">Add to cart</button>
                     </li>
                 </ul>
             </article>

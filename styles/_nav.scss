@@ -17,7 +17,12 @@
             text-align: center;
             h1{
                 font-weight: 800;
+
+            @media only screen and (max-width:750px){
+                font-size: 20px;
             }
+            }
+
         }
         .pages{
             flex: 3;
@@ -80,6 +85,8 @@
         }
         .li-menu{
             flex: 0;
+            visibility: hidden;
+            width: 0;
             margin: 0px 0px 0px 10px;
             button{
                 cursor:pointer;
@@ -89,6 +96,10 @@
                 img{
                     width: 55px;
                 }
+            }
+            @media only screen and (max-width:750px){
+                visibility: visible;
+                width: auto;
             }
         }
     }

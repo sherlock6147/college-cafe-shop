@@ -67,6 +67,12 @@ body h2 {
   font-weight: 800;
 }
 
+@media only screen and (max-width: 750px) {
+  .navigation .nav-big .cafe-name h1 {
+    font-size: 20px;
+  }
+}
+
 .navigation .nav-big .pages {
   -webkit-box-flex: 3;
       -ms-flex: 3;
@@ -152,6 +158,8 @@ body h2 {
   -webkit-box-flex: 0;
       -ms-flex: 0;
           flex: 0;
+  visibility: hidden;
+  width: 0;
   margin: 0px 0px 0px 10px;
 }
 
@@ -164,6 +172,13 @@ body h2 {
 
 .navigation .nav-big .li-menu button img {
   width: 55px;
+}
+
+@media only screen and (max-width: 750px) {
+  .navigation .nav-big .li-menu {
+    visibility: visible;
+    width: auto;
+  }
 }
 
 .navigation .nav-small {

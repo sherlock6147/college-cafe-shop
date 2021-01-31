@@ -67,6 +67,12 @@ body h2 {
   font-weight: 800;
 }
 
+@media only screen and (max-width: 750px) {
+  .navigation .nav-big .cafe-name h1 {
+    font-size: 20px;
+  }
+}
+
 .navigation .nav-big .pages {
   -webkit-box-flex: 3;
       -ms-flex: 3;
@@ -152,6 +158,8 @@ body h2 {
   -webkit-box-flex: 0;
       -ms-flex: 0;
           flex: 0;
+  visibility: hidden;
+  width: 0;
   margin: 0px 0px 0px 10px;
 }
 
@@ -164,6 +172,13 @@ body h2 {
 
 .navigation .nav-big .li-menu button img {
   width: 55px;
+}
+
+@media only screen and (max-width: 750px) {
+  .navigation .nav-big .li-menu {
+    visibility: visible;
+    width: auto;
+  }
 }
 
 .navigation .nav-small {
@@ -283,9 +298,8 @@ header #welcome {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  height: 100%;
+  min-width: 250px;
 }
 
 .menu .coffees .item-holder .menu-item h2 {
@@ -307,6 +321,28 @@ header #welcome {
   .menu .coffees .item-holder .menu-item {
     min-width: 60vw;
   }
+}
+
+.menu .coffees .item-holder .menu-item span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu .coffees .item-holder .menu-item span label {
+  color: #fff;
+}
+
+.menu .coffees .item-holder .menu-item span input {
+  width: 6ch;
+  border: none;
+  background-color: rgba(204, 204, 200, 0.863);
+  margin-left: 1ch;
+  text-align: center;
+  border-radius: 100px;
 }
 
 .menu .teas .item-holder {
@@ -339,6 +375,7 @@ header #welcome {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  min-width: 250px;
 }
 
 .menu .teas .item-holder .menu-item h2 {
@@ -348,6 +385,28 @@ header #welcome {
 .menu .teas .item-holder .menu-item p {
   color: #332e2e;
   font-weight: 600;
+}
+
+.menu .teas .item-holder .menu-item span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu .teas .item-holder .menu-item span label {
+  color: #fff;
+}
+
+.menu .teas .item-holder .menu-item span input {
+  width: 6ch;
+  border: none;
+  background-color: rgba(204, 204, 200, 0.863);
+  margin-left: 1ch;
+  text-align: center;
+  border-radius: 100px;
 }
 
 .menu .teas .item-holder .menu-item img {
@@ -392,6 +451,7 @@ header #welcome {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  min-width: 250px;
 }
 
 .menu .sandwiches .item-holder .menu-item h2 {
@@ -401,6 +461,28 @@ header #welcome {
 .menu .sandwiches .item-holder .menu-item p {
   color: #332e2e;
   font-weight: 600;
+}
+
+.menu .sandwiches .item-holder .menu-item span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu .sandwiches .item-holder .menu-item span label {
+  color: #fff;
+}
+
+.menu .sandwiches .item-holder .menu-item span input {
+  width: 6ch;
+  border: none;
+  background-color: rgba(204, 204, 200, 0.863);
+  margin-left: 1ch;
+  text-align: center;
+  border-radius: 100px;
 }
 
 .menu .sandwiches .item-holder .menu-item img {
@@ -425,6 +507,40 @@ header #welcome {
   margin: 5px auto;
   background-color: #000000;
   color: white;
+}
+
+.rating {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.rating .star-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+.rating h2 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+.rating .rate-me {
+  padding: 2px 10px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 100px;
+  font-size: 18px;
+  background-color: #26b981;
 }
 
 footer {
